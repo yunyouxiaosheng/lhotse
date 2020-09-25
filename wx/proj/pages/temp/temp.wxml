@@ -1,0 +1,1239 @@
+<!--pages/lz/temp.wxml-->
+
+<view>
+  <view style="display: flex; background-color: red;">
+    <view style="width:130px">
+      <view style="width:130px">
+        <view
+          style="width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center; height: 30px; border-color: lightgray; border-width: thin; border-right-style: sokid;">
+          <text>单号</text>
+        </view>
+      </view>
+    </view>
+    <scroll-view bindscroll="scrollXAxi" style="width: 190px; width: 100%; overflow: hidden; white-space: nowrap;"
+      scroll-left="0">
+      <view style="width:90px; display: inline-block; text-align: center; margin: 0 auto;">
+        <view
+          style="height:30px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>日期</text>
+        </view>
+      </view>
+      <view style="width:30px; display: inline-block; text-align: center; margin: 0 auto;">
+        <view
+          style="height:30px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>状态</text>
+        </view>
+      </view>
+      <view style="width:74px; display: inline-block; text-align: center; margin: 0 auto;">
+        <view
+          style="height:30px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>货号</text>
+        </view>
+      </view>
+      <view style="width:74px; display: inline-block; text-align: center; margin: 0 auto;">
+        <view
+          style="height:30px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>品名</text>
+        </view>
+      </view>
+      <view style="width:66px; display: inline-block; text-align: center; margin: 0 auto;">
+        <view
+          style="height:30px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>规格</text>
+        </view>
+      </view>
+      <view style="width:74px; display: inline-block; text-align: center; margin: 0 auto;">
+        <view
+          style="height:30px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>批号</text>
+        </view>
+      </view>
+      <view style="width:120px; display: inline-block; text-align: center; margin: 0 auto;">
+        <view
+          style="height:30px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>数量</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 内容视图 -->
+  <view style="background-color:lightgray; display: flex;">
+    <!-- 冻结栏 -->
+    <scroll-view bindscroll="scrollYAxi" scroll-top="0" style="width:130px; height:370px;">
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+      <view bindtap="didClickSection" data-section='0' data-item='code'
+        style="width:130px; background-color:white; display: inline-block; padding-bottom: 8rpx;">
+        <view
+          style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+          <text class='contentText'>"00000100000100""0001000001000001"</text>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- 活动栏 -->
+    <!-- <view> -->
+    <!-- 内容scroll -->
+    <scroll-view bindscroll="scroll" scroll-top="0" scroll-left="0" style="width: 190px; height: 370px; width: 100%;">
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+      <view style="background-color: white; display: inline-block; text-align: center; white-space: nowrap;">
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="date">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>2018-01-02</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:90px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="name">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>临时草稿1</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:60px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="age">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>180980</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>DK-20201</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="pname">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>心脏支架</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:66px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="specification">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20*20cm</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:74px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="lotno">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+        <view bindtap="didClickSection"
+          style="width:120px; display: inline-block; overflow: hidden; white-space: normal !important;" data-section="0"
+          data-item="qty">
+          <view
+            style="height:40px; width: 100%; text-align: center; word-break: keep-all; word-wrap: break-word; font-size: 13px; display: flex; justify-content: center; align-items: center;">
+            <text class='contentText'>20180102</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <!-- </view> -->
+  </view>
+</view>

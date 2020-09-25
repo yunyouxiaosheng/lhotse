@@ -1,0 +1,7 @@
+/**index.wxss**/
+
+.hover{
+
+  background-color: gray;
+
+}

@@ -1,0 +1,289 @@
+<!--
+<view class="container">
+  <scroll-view style="height: 400rpx; width: 200rpx;" scroll-x="true" scroll-y="true">
+    <view style="height: 80rpx; white-space: nowrap"  wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9, 0]}}">
+      <text>{{index}}: {{item}} + "qwertyuiop"</text>
+    </view>
+  </scroll-view>
+</view>
+-->
+
+<view style="z-index: -1;" bindtouchstart="touch_start_head" bindtouchmove="touch_move_head" bindtouchend="touch_end_head">
+  <scroll-view scroll-x="{{enable_scroll_x}}" scroll-left="{{move_left}}" bindscroll="scroll_head">
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19; position: absolute;"><text>"固定标题"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19;"><text>"固定标题"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #2782D7;"><text>"非固定标题A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题F"</text></view>
+    </view>
+  </scroll-view>
+  <!--
+  <scroll-view enable-flex="true" style="display: flex; flex-direction: column;" scroll-x="true">
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19;"><text>"固定列1"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #2782D7;"><text>"非固定列1A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19;"><text>"固定列2"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #2782D7;"><text>"非固定列2A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx;"><text>"固定列3"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3F"</text></view>
+    </view>
+  </scroll-view>
+  -->
+
+  <scroll-view style="height: 200rpx;" scroll-x="{{enable_scroll_x}}" scroll-left="{{move_left}}" bindscroll="scroll_head">
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19; position: absolute;"><text>"固定列1"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19;"><text>"固定列1"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #2782D7;"><text>"非固定列1A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19; position: absolute;"><text>"固定列2"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19;"><text>"固定列2"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #2782D7;"><text>"非固定列2A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; position: absolute;"><text>"固定列3"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx;"><text>"固定列3"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; position: absolute;"><text>"固定列4"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列4"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; position: absolute;"><text>"固定列5"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列5"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; position: absolute;"><text>"固定列6"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列6"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; position: absolute;"><text>"固定列7"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列7"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; position: absolute;"><text>"固定列8"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列8"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; position: absolute;"><text>"固定列9"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列9"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <!--<view style="flex-shrink: 0; width: 300rpx; position: absolute;"><text>"固定列10"</text></view>-->
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列10"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10F"</text></view>
+    </view>
+  </scroll-view>
+</view>
+
+
+<!--
+<view>
+  <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #00AD00;"><text>"固定标题0"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #278200;"><text>"非固定标题A0"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题B0"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题C0"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题D0"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题E0"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题F0"</text></view>
+  </view>
+
+  <scroll-view style="height: 400rpx; white-space: nowrap;" scroll-x="true" scroll-y="true">
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19;"><text>"固定标题"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #2782D7;"><text>"非固定标题A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定标题F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19;"><text>"固定列1"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #2782D7;"><text>"非固定列1A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列1F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #1AAD19;"><text>"固定列2"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx; background-color: #2782D7;"><text>"非固定列2A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列2F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx;"><text>"固定列3"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列3F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列4"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列4F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列5"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列5F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列6"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列6F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列7"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列7F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列8"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列8F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列9"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列9F"</text></view>
+    </view>
+    <view style="display: flex;">
+      <view style="flex-shrink: 0; width: 300rpx"><text>"固定列10"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10A"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10B"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10C"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10D"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10E"</text></view>
+      <view style="flex-shrink: 0; width: 300rpx"><text>"非固定列10F"</text></view>
+    </view>
+  </scroll-view>
+</view>
+-->
+
+
+
+<!--
+    <scroll-view style="height: 400rpx; width: 200rpx; white-space: nowrap; display: flex; flex-direction: row;" scroll-y="true">
+      <view style="height: 80rpx; width: 100rpx; white-space: nowrap; display: flex; flex-direction: row;" >
+        <text>: </text>
+      </view>
+      <view style="height: 80rpx; white-space: nowrap; display: flex; flex-direction: row;" >
+        <text>"qwertyuiop012345678901234567890123456789xyzlsdkfals"</text>
+      </view>
+
+    </scroll-view>
+  -->

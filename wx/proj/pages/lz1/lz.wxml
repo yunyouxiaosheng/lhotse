@@ -1,0 +1,103 @@
+<!--pages/lz/lz.wxml-->
+<view id="main_view" bindtouchstart="touch_start_view" bindtouchmove="touch_move_view" bindtouchend="touch_end_view">
+  <scroll-view id="n1_scroll_view" style="height: 100px;" scroll-x="{{enable_scroll_x}}" scroll-y="{{enable_scroll_y}}"
+    scroll-left="{{scroll_left}}" scroll-top="{{scroll_top}}" bindscroll="scroll_scroll_view"
+    bindtouchstart="touch_start_scroll_view" bindtouchmove="touch_move_scroll_view"
+    bindtouchend="touch_end_scroll_view">
+    <view style="display: flex">
+      <view style="width: 100px; flex-shrink:0; background-color: red;">标题A</view>
+      <view style="width: 100px; flex-shrink:0; background-color: green;">标题B</view>
+      <view style="width: 100px; flex-shrink:0;">标题C</view>
+      <view style="width: 100px; flex-shrink:0;">标题D</view>
+      <view style="width: 100px; flex-shrink:0;">标题E</view>
+      <view style="width: 100px; flex-shrink:0;">标题F</view>
+      <view style="width: 100px; flex-shrink:0; background-color: red;">标题G</view>
+    </view>
+  </scroll-view>
+  <scroll-view id="n2_scroll_view" style="height: 100px;" scroll-x="{{enable_scroll_x}}" scroll-y="{{enable_scroll_y}}"
+    scroll-left="{{scroll_left}}" scroll-top="{{scroll_top}}" bindscroll="scroll_scroll_view"
+    bindtouchstart="touch_start_scroll_view" bindtouchmove="touch_move_scroll_view"
+    bindtouchend="touch_end_scroll_view" bindscrolltolower="scroll_to_lower">
+    <view style="display: flex">
+      <view style="width: 100px; flex-shrink:0; background-color: red;">标题A</view>
+      <view style="width: 100px; flex-shrink:0; background-color: green;">标题B</view>
+      <view style="width: 100px; flex-shrink:0;">标题C</view>
+      <view style="width: 100px; flex-shrink:0;">标题D</view>
+      <view style="width: 100px; flex-shrink:0;">标题E</view>
+      <view style="width: 100px; flex-shrink:0;">标题F</view>
+      <view style="width: 100px; flex-shrink:0; background-color: red;">标题G</view>
+    </view>
+    <view style="display: flex">
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ1A</view>
+      <view style="width: 100px; flex-shrink:0; background-color: green;">XYZ1B</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ1C</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ1D</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ1E</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ1F</view>
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ1G</view>
+    </view>
+    <view style="display: flex">
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ2A</view>
+      <view style="width: 100px; flex-shrink:0; background-color: green;">XYZ2B</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ2C</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ2D</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ2E</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ2F</view>
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ2G</view>
+    </view>
+    <view style="display: flex">
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ3A</view>
+      <view style="width: 100px; flex-shrink:0; background-color: green;">XYZ3B</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ3C</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ3D</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ3E</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ3F</view>
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ3G</view>
+    </view>
+    <view style="display: flex">
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ4A</view>
+      <view style="width: 100px; flex-shrink:0; background-color: green;">XYZ4B</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ4C</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ4D</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ4E</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ4F</view>
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ4G</view>
+    </view>
+    <view style="display: flex">
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ1A</view>
+      <view style="width: 100px; flex-shrink:0; background-color: green;">XYZ1B</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ1C</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ1D</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ1E</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ1F</view>
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ1G</view>
+    </view>
+    <view style="display: flex">
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ2A</view>
+      <view style="width: 100px; flex-shrink:0; background-color: green;">XYZ2B</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ2C</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ2D</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ2E</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ2F</view>
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ2G</view>
+    </view>
+    <view style="display: flex">
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ3A</view>
+      <view style="width: 100px; flex-shrink:0; background-color: green;">XYZ3B</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ3C</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ3D</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ3E</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ3F</view>
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ3G</view>
+    </view>
+    <view style="display: flex">
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ4A</view>
+      <view style="width: 100px; flex-shrink:0; background-color: green;">XYZ4B</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ4C</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ4D</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ4E</view>
+      <view style="width: 100px; flex-shrink:0;">XYZ4F</view>
+      <view style="width: 100px; flex-shrink:0; background-color: red;">XYZ4G</view>
+    </view>
+  </scroll-view>
+</view>

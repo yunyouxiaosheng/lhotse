@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/lz1/lz",
     "pages/lz/cai_gou",
     "pages/temp/temp",
     "pages/wxml/index",
